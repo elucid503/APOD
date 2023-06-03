@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="twitter:title" content="Astronomy Picture of the Day"> 
+    <meta name="twitter:description" content="A better version of the Astronomy Picture of the Day."> 
+    <meta name="twitter:image" content="./assets/images/logo.png"">
+    <meta name="og:title" content="Astronomy Picture of the Day"> 
+    <meta name="og:description" content="A better version of the Astronomy Picture of the Day."> 
+    <meta name="og:image" content="./assets/images/logo.png">
+
+    <title>Astronomy Picture of the Day</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/image.css">
+    <script src="./js/main.js"></script>
+    <script src="./js/image.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+    <body>
+
+        <nav class="navbar">
+            <a href="#" class="navbar-brand" data-minified="APOD">Astronomy Picture of the Day</a>
+            <ul class="nav-list">
+                <li><a href="https://accelerated.sjparts.org">API</a></li>
+                <li><a href="https://apod.nasa.gov/apod/">NASA Site</a></li>
+            </ul>
+            <button class="navbar-toggler" id="navbar-toggler"><i class='bx bx-menu-alt-right'></i></button>
+        </nav>
+
+        <div class="container">
+            <header class="header">
+                <h1>Photo Name</h1>
+                <h2>Credit</h2>
+            </header>
+        </div>
+
+        <div class="photo"> 
+
+            <img src="" alt="A cool astronomy picture should be here! See the description below for more info.">
+            <div class="actions">
+
+                <div class="action" data-id="hide">
+                    <i class='bx bx-hide' data-id="hide"> </i></i>
+                </div>
+
+                <div class="action" data-id="external">
+                    <i class='bx bx-link-external' data-id="external"> </i></i>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container-info">
+            <div class="info">
+                <h2>Photo Info</h2>
+                <p>Info</p>
+            </div>
+        </div>
+
+        <div class="placeholder"> </div>    
+
+        <canvas id="ambience"></canvas>
+
+    </body>
+
+</html>
+
+<script>
+
+    global()
+    loadPhoto()
+
+    ambience()
+
+</script>
